@@ -23,7 +23,7 @@
 			<a href="formularze.html">FORMULARZE</a></br>
 	</div>
 	<div style="float:right; width:70%">
-<p><button type="reset" name="rpzycisk resetu">Reset</button></p>
+<p><input type="reset" id="q"  />RESET</p>
 IMIĘ:<input type="text" id="nazwisko_i_imie"  size="30" maxlenght="40" /><br/>
 DRUGIE IMIE:<input type="text" id="nazwisko_i_imie"  size="30" maxlenght="40" /><br/>
 NAZWISKO:<input type="text" id="nazwisko_i_imie"  size="30" maxlenght="40" /><br/>
@@ -45,7 +45,65 @@ NAZWISKO:<input type="text" id="nazwisko_i_imie"  size="30" maxlenght="40" /><br
 </fieldset>
 <p><input type="date" value="2009-01-01"/>Wprowadź swoją datę urodzenia</p>
 
-<p><button type="reset" name="reset">Reset</button></p>
+
+<p> ZAZNACZ JĘZYKI JAKIMI SIĘ POSŁUGUJESZ </p>
+<p> <input type="checkbox" id="nazwa_jezyki" value="wartosc_angielski" checked="checked"  /> ANGIELSKI </p>
+<p> <input type="checkbox" id="nazwa_jezyki" value="wartosc_niemiecki" /> NIEMIECKI </p>
+<p> <input type="checkbox" id="nazwa_jezyki" value="wartosc_chinski" /> CHINSKI </p>
+<p> <input type="checkbox" id="nazwa_jezyki" value="wartosc_slaski" /> SLASKI </p>
+<p> <input type="checkbox" id="nazwa_jezyki" value="wartosc_francuski" /> FRANCUSKI </p>
+
+<p><select name="nazwa_owoce" size="5" multiple="multiple">
+<optgroup label="ULUBIONE OWOCE">
+<option value="truskawki" /> MALINY
+<option value="banany" /> BANANY
+<option value="banany" /> POMARANCZE
+<option value="banany" /> JABLKA
+<option value="maliny" selected /> BOROWKI </optgroup> </select></p>
+
+<p><input list="blok" name="przegladarki" />  
+	  <datalist id="blok">
+		
+    		<option value="Internet Explorer">
+  		<option value="Firefox">
+	 	<option value="Chrome">
+		<option value="Opera">
+		<option value="Safari">
+	  </datalist>   <input type="submit" name=Przelij>  </p>
+
+
+
+<p><select id="days[ ]" name="days[ ]" size="7" multiple="multiple">
+<optgroup label="DNI WOLNE">
+<option> SOBOTA </option>
+<option> NIEDZIELA </option> </optgroup>
+<optgroup label="DNI ROBOCZE">
+<option> PONIEDZIAŁEK </option>
+<option> WTOREK </option>
+<option> SRODA </option>
+<option> CZWARTEK </option>
+<option> PIATEK </option> </optgroup> </select></p>
+
+
+<p>
+<textarea cols="50" rows="6 ">
+Jan Niezbędny
+ul. Nieznana 3
+40-001 Katowice
+Polska
+</textarea>
+</p>
+
+<p>
+<textarea cols="50" rows="6 ">
+Wprowadz swój adres zamieszkania
+</textarea>
+</p>
+
+<button type="button" id="kupteraz" name="przycisk_kupowania" onclick="alert('Zabitowałeś się!')"> Kliknij ten nie podejrzany przycisk! </button>
+<input type="file" name="leavel" value="Przeglšdaj!"/> 
+
+<p><input type="reset" id="q"  />RESET</p>
 	</div>
 	<div style="background-color:grey;clear:both;">
 		<center> &copy; M.D., October 2024</center>
