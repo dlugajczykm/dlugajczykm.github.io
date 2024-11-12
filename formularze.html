@@ -23,7 +23,7 @@
 			<a href="formularze.html">FORMULARZE</a></br>
 	</div>
 	<div style="float:right; width:70%">
-<button type="reset" id="resetowanie">RESET</button><br/>
+<button type="reset">RESET</button><br/>
 IMIĘ:<input type="text" id="nazwisko_i_imie"  size="30" maxlenght="40" /><br/>
 DRUGIE IMIE:<input type="text" id="nazwisko_i_imie"  size="30" maxlenght="40" /><br/>
 NAZWISKO:<input type="text" id="nazwisko_i_imie"  size="30" maxlenght="40" /><br/>
@@ -109,10 +109,72 @@ Podaj swój adres zamieszkania
 
 <hr/>
 		
-<button type="button" id="kupteraz" name="przycisk_kupowania" onclick="alert('Zabitowałeś się!')"> Kliknij ten nie podejrzany przycisk! </button><br/>
+<button type="button" name="przycisk_kupowania" onclick="alert('Zabitowałeś się!')"> Kliknij ten nie podejrzany przycisk! </button><br/>
 <input type="file" name="leavel" value="Przeglšdaj!"/> <br/>
 
-<button type="reset" id="resetowanie">RESET</button><br/>
+<hr/>
+
+<p><input type="radio" name="wyznanie" value="chistian" acceskey="C"/>Chrześcijaństwo [skrót ALT+C]</p>
+<p><input type="radio" name="wyznanie" value="muslim" acceskey="M"/>Muzułmaństwo [skrót ALT+M]</p>
+<p><input type="radio" name="wyznanie" value="hindi" acceskey="H"/>Hinduskie [skrót ALT+H]</p>
+<p><input type="radio" name="wyznanie" value="jewish" acceskey="Z"/>Żydowskie [skrót ALT+Z]</p>
+<p><input type="radio" name="wyznanie" value="none" acceskey="A"/>Ateistyczne [skrót ALT+A]</p>
+
+<hr/>
+
+<button type="button" name="przycisk" style="background:pink;color:aqua">ten przycisk nic nie robi</button><br/>
+<button type="submit" name="przycisk1"> Wyslij !  </button> <br />
+<button type="submit" name="przeslij" style="background:#00DD00" value="cokolwiek" onclick="alert('Przesłano formularz')">Prześlij</button><br/>
+
+<hr/>
+
+<p>dupnij se w kameleona</p>
+<button type="button" name="gekon" value="dsadasdas" onclick="alert('Dupnąłeś se w kameleona 👍')"><img src="foty/kameleon.png" width="500px"/></button><br/>
+
+<hr/>
+
+<input type="radio" required value="read"/>Zaznacz czy przeczytałeś regulamin ->
+<a href="https://www.youtube.com">REGULAMIN</a><br/>
+
+<input type="email" value="nazwa@gmail.com"> Podaj swojego maila <br />
+<input type="url"> Podaj swoja strone internetową <br />
+<input type="number" min="1" max="200" step="1" value="100"> Wprowadź ile masz IQ <br />
+<input type="date" value="2024-11-21"> Wpisz datę narodzin matki <br />
+<input type="color" value="#8000FF"> Podaj swój uluboiony kolor<br />
+
+<hr/>
+
+Wejdz na pole tekstowe i zobacz co sie stanie!
+<input type="text" id="myInput" onfocus="focusFunction()" onblur="blurFunction()"> <br/>
+
+<script>
+function focusFunction() 
+{
+	document.getElementById("myInput").style.background = "yellow";
+}
+function blurFunction() 
+{
+	document.getElementById("myInput").style.background = "red";
+}
+</script>
+
+<hr/>
+
+Element wyjsciowy przedstawia wynik obliczenia <br/>
+<form action="/action_page.php"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="0">
+  100 +
+  <input type="number" id="b" name="b" value="25">
+  =
+  <output name="x" for="a b"></output>
+</form>
+
+<hr/>
+<input type="text" name="lol" value="zablokowany zeby wkurzac" disabled> <br />
+
+<button type="reset">RESET</button><br/>
 	</div>
 	<div style="background-color:grey;clear:both;">
 		<center> &copy; M.D., October 2024</center>
