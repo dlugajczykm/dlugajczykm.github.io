@@ -23,22 +23,83 @@
 			<a href="formularze.html">FORMULARZE</a></br>
 			<a href="dlugajczyk_formularz.html">FORLMULARZE NA OCENE</a><br/>
 	</div>
-	<div style="float:right; 70%">
+	<form>
+	<div style="float:right; width:70%;background-color:lightblue">
+	
+	<fieldset>
+	<legend><span style="color:green;font-size:40px">ADRES</legend>
+	<p>
+		<input type="radio" name="siema" value="basic" id="podstawowy"/ required><label for="podstawowy">podstawowy
+		
+		<input type="radio" name="siema" value="wysylka" id="dowysylki"/><label for="dowysylki">do wysyłki
+		
+		<input type="radio" name="siema" value="korespondencja" id="korespondecyjny"/><label for="korespondecyjny">korespondecyjny
+		
+		<input type="radio" name="siema" value="odbiorca" id="odbiorcy" checked><label for="odbiorcy">odbiorcy</p>
+		
+		<p>Nazwa&nbsp&nbsp&nbsp<input type="text" name="nazwa" value="Sklep wielobranżowy Poligraf" size="35px" required/></p>
+		<p>Ulica i numer &nbsp&nbsp&nbsp<input type="text" name="adres" value="" size="40px" required/></p>
+		<p>Kod pocztowy&nbsp&nbsp&nbsp<input type="text" name="postaladress" value="40-671" size="3px" required/></p>
+		<p>Miejscowość&nbsp&nbsp&nbsp<input type="text" name="city" value="Katowice" size="30px" required/></p>
+		<p>Telefon&nbsp&nbsp&nbsp<input type="text" name="phone" value="+48 601 601 601" size="11px" required/></p>
+		<p>E-mail&nbsp&nbsp&nbsp<input type="email" name="email" value="info@insert.com" size="30px" required/></p>	
+	</fieldset>
+	
+	<fieldset>
+	<legend><span style="color:green;font-size:40px">WYSYŁKA</legend>
+	<p>Przesyłka&nbsp&nbsp
+		<select name="nazwajakas" required>
+			<option value="none"/>
+			<option value="eksper"/> Ekspresowo
+			<option value="ekonom"/> Ekonomicznie
+			<option value="priorytet"/> Priorytetowy
+		</select>
+	</p>
 
+		
+		<p>Waga (g)&nbsp&nbsp<input type="text" size="5px" value="1000"><p>
+		<p>Gabaryt&nbsp&nbsp
+		<select name="nazwa_buko" size="4" required>
+			<option value="S"/> S (28x8x64cm)
+			<option value="M"/> M (38x19x64cm)
+			<option value="L"/> L (41x38x64cm)
+			<option value="XL"/> XL (60x60x70cm)
+		</p> 
+		<p>Wartość &nbsp&nbsp<input type="text" value="0,00" size="5px">zł</p> 
+		<p>Nr rachunku&nbsp&nbsp<input type="text" name="rachunek" required size="30px"/></p>
+		<input type="text" name="rachunek" size="43px"/>
+		<p>Data wysyłki&nbsp&nbsp<input type="date" value="2024-11-19"></p>
+	</fieldset>
+	
+	<fieldset>
+	
+	<input type="checkbox" name="polewyboru" value="nwm" accesskey="z">Z - żadanie zwortu/odesłania<br/>
+	<input type="checkbox" name="polewyboru" value="nbf" accesskey="r">R - polecenie<br/>
+	<input type="checkbox" name="polewyboru" value="fsd" accesskey="o">O - potwierdzenie odbioru<br/>
+	<input type="checkbox" name="polewyboru" value="da1" accesskey="w">W - zadeklarowanie wartości<br/>
+	<input type="checkbox" name="polewyboru" value="d2w" accesskey="s">S - sprawdzanie zwartości<br/>
+	<input type="checkbox" name="polewyboru" value="ssd" accesskey="k">K - ostrożnie<br/>
+	
+	<b>UWAGI:</b><br/>
+	<textarea name="uwagi" cols="68" rows="10">
+Proszę o wpisanie wszelkich uwag.
 
-
-
-
-
-
-
-
-
-
-
-
-
+<- / Przesyłka:
+	 Eknonomiczna
+	 Priorytetowa
+	 Ekspresowa /
+	</textarea>
+	
+	</fieldset>
+	
+	<fieldset>
+		<p><button type="button" name="Wyślij" value="Wyślij" onclick="alert('Wysłano!')">Wyślij</button></p>
+		<p><button type="button" name="Cancel" value="Anuluj" onclick="alert('Anulowano!')">Anuluj</button></p>
+		<p><button type="submit">Wyslij</button>(submit do sprawdzenia wymaganych opcji w formularzu)</p>
+	</fieldset>
+	
 	</div>
+	</form>
 	<div style="background-color:grey;clear:both;">
 		<center> &copy; M.D., October 2024</center>
 	</div>
