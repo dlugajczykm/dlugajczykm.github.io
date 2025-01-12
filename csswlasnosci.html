@@ -28,13 +28,98 @@
             font-style:normal;
             padding: 0 0 0 0;
         }
+		#gora{
+			letter-spacing: 100%;
+			color:green;
+			text-decoration:overline;
+			text-align: center;
+			padding:20px;
+			word-spacing: 2px;
+
+		}
+		h3{
+			text-decoration: underline;
+			word-spacing: 15px;
+			text-align: left;
+			color:red;
+			text-transform: uppercase;
+		}
+		h4{
+			color:purple;
+			text-decoration: line-through;
+			line-height: 2cm;
+			direction: rtl;
+			font-variant: small-caps;
+			text-indent: 50px;
+			letter-spacing: 5px;
+		}
+		span{
+			color:red;
+			word-spacing: 10px;
+			text-decoration: underline;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+		body{
+			background-image: url(foty/giphy.webp);
+			background-repeat: no-repeat;
+			background-position-y: center;
+			background-position-x: right;
+			
+		}
+		#obramowanie1{
+			width: 40%;
+			color:aqua;
+			border: 1;
+			border-style: dashed;
+		}
+		.zadanie2{
+			border-color: aqua;
+			background-color: yellow;
+			border-style: dashed;
+			text-align: right;
+			border-width: medium;
+
+		}
+		.zadanie3{
+			color:silver;
+			background-color: black;
+			border: 1px ridge yellow;
+			font-variant: small-caps;
+			text-align: right;
+		}
+		#zadanie4{
+			text-decoration: overline;
+			letter-spacing: 5pt;
+			text-align: center;
+			color:white;
+			background-color: fuchsia;
+			border: 3px dotted white;
+			padding: 20px;
+			width: 70%;
+		
+		}
+		h1#zadanie5{
+			border: thick groove purple;
+			background-color: rgb(148, 148, 59);
+			font-family: sans-serif;
+		}
+		#lewo{
+			float:left;
+			width:30%;
+			height: 690px;
+		}
+		#prawo{
+		}
+
+		
 	</style>
 </head>
 <body>
 	<div style="background-color:grey;">
 		<h1><center>PSI - Maks Długajczyk</center></h1>
 	</div>
-	<div style="float:left; width:30%; height: 690px;">
+	<div id="lewo">
 		<h3>HTML</h3>
 			<a href="index.html">STRONA GŁÓWNA</a></br>
 			<a href="kolory.html">KOLORY</a></br>
@@ -49,7 +134,6 @@
 			<a href="multimediaa.html">MULTIMEDIA</a><br/>
 			<a href="canvas.html">CANVAS</a><br/>
 		<h3>CSS</h3>
-		
              <a href="csswlasnosci.html">WLASCIWOSCI CSS</a>
 		
 		<h3>DOKUMENT</h3>
@@ -63,19 +147,79 @@
 			
 		<h3>MULTIMEDIA</h3>
 	</div>
-	<div style="float:right; width:70%">
-        <h1><ins>ZADANIE I - CZCIONKA:</ins></h1>
+	<div style="float:right; width:70%;" id="prawo">
+        <span><b>ZADANIE I - CZCIONKA:</b></span><br/>
         <p>Formatowanie akapitu p: krój czcionki - Courier New, styl - pocyhelenie, grubość - 500, rozmiar - 20px, kolor - maroon</p>
 
-        <h1><ins>ZADANIE Ia - CZCIONKA:</ins></h1>
+        <span><b>ZADANIE IA - CZCIONKA:</b></span><br/>
         <blockquote>Formatowanie blockquote: krój czcionki - fantasy, styl - pochylenie, grubość - bolder, rozmiar - 30px, typ czcionki , kolor - teal</blockquote>
 
-        <h1><ins>ZADANIE Ib - CZCIONKA:</ins></h1>
+        <span><b>ZADANIE IB - CZCIONKA:</b></span><br/>
         <em>
             Formatowanie (wyróżnionego tekstu - uwypuklenia) EM: dowolne !!<br/>
             kolor - fioletowy, rozmiar - 50px, grubość - 500, styl - normalny, odstęp - 0 0 0 0
         </em>
-    </div>
+		<br/>
+		<span><b>ZADANIE II - TESKT:</b></span>
+		<h1 id="gora">
+			Formatowanie tytułu h1:<br/>
+			dekoracja tekstu – nakreślenie,<br/>
+			odstępy między wierszami – 100%,<br/>
+			wyśrodkowanie,<br/>
+			kolor tekstu – zielony,<br/>
+			zamiana tekstu - małe litery<br/>
+			wcięcie wiersza - 20px;<br/>
+			odstępy miedzy znakami: 2px<br/>
+		</h1>
+
+		<span><b>ZADANIE IIA - TEKST:</b></span> <br/>
+		<h4>
+			Formatowanie tytułu h4:<br/>
+			kolor tekstu –fioletowy, dekoracja tekstu – przekreślenia, odstępy między liniami – 2cm,<br/>
+			tekst do prawej strony, zmiana tekstu – kapitaliki, wcięcie pierwszego wiersza - 50px;<br/>
+			odstępy miedzy znakami: 5px:<br/>
+
+		</h4>
+
+		<span><b>zadanie IIb - MODYFIKOWANIE ZADAŃ:</b></span><br/>
+		<h3>
+			Formatowanie tytułu h3:<br/>
+			dekoracja tekstu – podkreślenie;<br/>
+			odległość między wyrazami w tekście: 15px;<br/>
+			text-align: left;<br/>
+			color: red;<br/>
+			zmiana wielkości liter w tekście: duże litery;<br/>
+		</h3>
+		
+		<hr/>
+
+		<span>ZADANIE III – TŁO:</span><br/>
+		tło obrazkowe url(foty/tlo.jpg), nieruchome, z powtarzaniem w poziomie, z przesunięciem o 10 % w dół strony:
+		<div id="obramowanie1">
+			<span>zadanie IV – OBRAMOWANIE:</span><br/>
+			<br/>
+		</div>
+		
+
+			<h2 class="zadanie2">	
+			zadanie IV – OBRAMOWANIE:<br/>
+			Ustawienie obr. dla h2: styl – kreskowanie, kolor obr. – aqua, grubość - średnia, tło żółte
+			</h2>
+			
+		<h1 class="zadanie3">
+			KOLOR TEKSTU: SREBRNY, CZARNE TŁO, ŻÓŁTE OBRAMOWANIE, STYL OBRAMOWANIA: RIDGE,
+			DUŻE LITERY / KAPITALIKI, TEKST USTAWIONY: DO PRAWEJ, BRAK DEKORACJI
+		</h1>
+
+		<h1 id="zadanie4">
+			TEKST NAKREŚLONY, ODSTĘPY MIĘDZY ZNAKAMI W TEKŚCIE 5 PT, WYŚRODKOWANY TEST, KOLOR TEKSTU BIAŁY, TŁO FUCHSIA, OBRAMOWANIE 3PX KROPOWANE BĄDŹ INSET BIAŁE, ODSTĘP 20 PX, SZEROKOŚĆ 70%
+		</h1>
+
+		<h1 id="zadanie5">
+			ZAD DODATKOWE
+		</h1>
+
+	</div>
 	<div style="background-color:grey;clear:both;">
 		<center> &copy; M.D., October 2024</center>
 	</div>
