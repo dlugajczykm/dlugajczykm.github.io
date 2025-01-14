@@ -6,6 +6,10 @@
 	<title>Wlasciwosci css</title>
 	<link/>
     <style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
 		p{
 			font-family:"Courier New";
 			font-style:italic;
@@ -99,11 +103,86 @@
 			width: 70%;
 		
 		}
+		#zadanie4a{
+			text-decoration: overline;
+			letter-spacing: 5pt;
+			text-align: center;
+			color:white;
+			background-color: fuchsia;
+			border: 3px dotted navy;
+			padding: 20px;
+			width: 70%;
+			background-clip:content-box;
+		}
 		h1#zadanie5{
 			border: thick groove purple;
 			background-color: rgb(148, 148, 59);
 			font-family: sans-serif;
+			text-align: center;
 		}
+		h2#ramka1{
+			background-clip: ;
+			text-align: right;
+			background-color: white;
+			color:black;
+			padding: 10px;
+			width: 70%;
+			border: 30px solid transparent;
+			border-image: url(foty/papeteria.jfif) 50 stretch;
+
+		}
+		h2#ramka2{
+			background-clip: ;
+			text-align: right;
+			background-color: white;
+			color:black;
+			padding: 10px;
+			width: 70%;
+			border: 30px solid transparent;
+			border-image: url(foty/papeteria.jfif) 50 round;
+		}
+		h2#ramka3{
+			border: 50px solid;
+			border-image: url(foty/giphy.webp) 100 round;
+			padding: 5px;
+			width: 33%;
+			font-size: 14px;
+			background: none;
+			text-align: left;
+			color: black;
+		}
+		h2#ramka3a{
+			border: 50px solid;
+			border-image: url(foty/giphy.webp) 80 round;
+			padding: 5px;
+			width: 33%;
+			font-size: 14px;
+			background: none;
+			text-align: left;
+			color: black;
+		}
+		h2#ramka3b{
+			border: 50px solid;
+			border-image: url(foty/giphy.webp) 50 round;
+			padding: 5px;
+			width: 33%;
+			font-size: 14px;
+			background: none;
+			text-align: left;
+			color: black;
+		}
+
+		#logo {
+		background-color: black;
+		color: white;
+		font: 50px tahoma;
+		text-align: center;
+		text-shadow: silver 4px 4px 8px;
+		border: double silver;
+		letter-spacing: 15 px;
+		width:1020px;
+		}
+		<!-- inne --!>
 		#lewo{
 			float:left;
 			width:30%;
@@ -111,14 +190,7 @@
 		}
 		#prawo{
 		}
-		#logo {background-color: black;
-		color: white;
-		font: 50px tahoma;
-		text-align: center;
-		text-shadow: silver 4px 4px 8px;
-		border: double silver;
-		letter-spacing: 15 px;
-		width:1020px;}		
+		
 
 		
 	</style>
@@ -223,10 +295,59 @@
 			TEKST NAKREŚLONY, ODSTĘPY MIĘDZY ZNAKAMI W TEKŚCIE 5 PT, WYŚRODKOWANY TEST, KOLOR TEKSTU BIAŁY, TŁO FUCHSIA, OBRAMOWANIE 3PX KROPOWANE BĄDŹ INSET BIAŁE, ODSTĘP 20 PX, SZEROKOŚĆ 70%
 		</h1>
 
+		<h1 id="zadanie4a">
+			TEKST NAKREŚLONY, ODSTĘPY MIĘDZY ZNAKAMI W TEKŚCIE 5 PT, WYŚRODKOWANY TEST, KOLOR TEKSTU BIAŁY, TŁO FUCHSIA, OBRAMOWANIE 3PX KROPOWANE BĄDŹ INSET BIAŁE, ODSTĘP 20 PX, SZEROKOŚĆ 70%
+		</h1>
+
 		<h1 id="zadanie5">
 			ZAD DODATKOWE
 		</h1>
-		
+
+		<h2 id="ramka1">
+			zadanie IV – OBRAMOWANIE:<br/>
+			Ustawienie obramowania obrazkowego dla nagłówka h2 - z identyfikatorem "ramka1"<br/>
+			TŁO: białe; TEKST: czarny, ODSTĘP: 10px, SZEROKOŚĆ: 70%; border: 30px solid transparent;<br/>
+			border-image: url(folder/nazwa.jpg) 50 stretch;
+			<br/><br/>
+			OBRAZ JEST ROZCIĄGNIĘTY ABY WYPEŁNIĆ CAŁY OBSZAR.
+		</h2>
+
+		<h2 id="ramka2">
+			zadanie IV - OBRAMOWANIE:<br/>
+			Ustawienie obramowania obrazkowego dla nagłówka h2 - z identyfikatorem "ramka2"<br/>
+			TŁO: białe; TEKST: czarny, ODSTĘP: 10px, SZEROKOŚĆ: 70%; border: 30px solid transparent;<br/>
+			border-image: url(folder/nazwa.jpg) 50 round;
+			<br/><br/>
+			OBRAZ WYPEŁNIA OBSZAR. W RAZIE POTRZEBY JEST PRZESKALOWNY, ABY WYPEŁNIĆ OBSZAR.
+		</h2>
+		<table border="0">
+			<tr>
+				<td>
+					<h2 id="ramka3">
+						zadanie IV – OBRAMOWANIE:
+						Ustawienie obramowania obrazkowego dla nagłówka h2 - z identyfikatorem "ramka3"
+						TŁO: none; TEKST: czarny, ODSTĘP: 5px, SZEROKOŚĆ: 33%; border: 50 px solid;
+						border-image: url(foty/gwiazdka1.gif) 100 round;
+						</h2>
+				</td>
+				<td>
+					<h2 id="ramka3a">
+						zadanie IV – OBRAMOWANIE:
+						Ustawienie obramowania obrazkowego dla nagłówka h2 - z identyfikatorem "ramka3a"
+						TŁO: none; TEKST: czarny, ODSTĘP: 5px, SZEROKOŚĆ: 33%; border: 50 px solid;
+						border-image: url(foty/gwiazdka1.gif) 80 round;
+						</h2>
+				</td>
+				<td>
+					<h2 id="ramka3b">
+						zadanie IV – OBRAMOWANIE:
+						Ustawienie obramowania obrazkowego dla nagłówka h2 - z identyfikatorem "ramka3b"
+						TŁO: none; TEKST: czarny, ODSTĘP: 5px, SZEROKOŚĆ: 33%; border: 50 px solid;
+						border-image: url(foty/gwiazdka1.gif) 50 round;
+						</h2>
+				</td>
+			</tr>
+		</table>
 		<h1 id="logo">
 			LOGO
 		</h1>
