@@ -7,7 +7,7 @@
 	<link/>
     <style>
 		*{
-			margin: 0;
+			margin: 0px;
 			padding: 0;
 		}
 		p{
@@ -121,7 +121,7 @@
 			text-align: center;
 		}
 		h2#ramka1{
-			background-clip: ;
+			
 			text-align: right;
 			background-color: white;
 			color:black;
@@ -132,7 +132,7 @@
 
 		}
 		h2#ramka2{
-			background-clip: ;
+			
 			text-align: right;
 			background-color: white;
 			color:black;
@@ -171,26 +171,98 @@
 			text-align: left;
 			color: black;
 		}
-
 		#logo {
-		background-color: black;
-		color: white;
-		font: 50px tahoma;
-		text-align: center;
-		text-shadow: silver 4px 4px 8px;
-		border: double silver;
-		letter-spacing: 15 px;
-		width:1020px;
+			background-color: black;
+			color: white;
+			font: 50px tahoma;
+			text-align: center;
+			text-shadow: silver 4px 4px 8px;
+			border: double silver;
+			letter-spacing: 15px;
+			width:1020px;
 		}
-		<!-- inne --!>
+		a#link1{
+			color: black;
+			text-decoration: none;
+			background-color: fuchsia;
+			border-style: solid;
+			border-radius: 5px;
+		}
+		a#link1:hover{
+			color: yellow;
+			text-decoration: none;
+			background-color: green;
+			border-style: dotted;
+            border-radius: 5px;
+			
+		}
+		a#link1:active{
+			color: black;
+			text-decoration: none;
+			background-color: gray;
+			border-style: dotted;
+            border-radius: 5px;
+		}
+		a#link2{
+			color: black;
+			text-decoration: none;
+			background-color: yellow;
+			border-style: double;
+			padding: 10px;
+			background-origin: content-box;
+			background-clip: content-box;
+			border-radius: 5px;
+		}
+		a#link2:hover{
+			color: aqua;
+			text-decoration: none;
+			background-color: green;
+			border-style: outset;
+            padding: 10px;
+            background-origin: content-box; 
+            background-clip: content-box; 
+            border-radius: 5px;
+		}
+		#punkty{
+			list-style: circle outside;
+			color: blueviolet;
+			font-family: sans-serif;
+		}
+		#numer{
+			list-style: upper-alpha inside;
+			color: lime;
+			font-family:'Times New Roman';
+		}
+		#listagif{
+			list-style-image: url(foty/szopmaly.webp);
+		}
 		#lewo{
-			float:left;
 			width:30%;
-			height: 690px;
+			height: 1000px;
+			float: left;
 		}
 		#prawo{
+			float:right;
+			width:70%;
 		}
-		
+		#kursor:hover{
+			cursor:help;
+		}
+		#kursor2:hover{
+			cursor:crosshair;
+		}
+		#kursor{
+			color:red;
+			text-decoration: underline;
+		}
+		#rozmiar{
+			width: 45%;
+			height: 8%;
+			border: 5px dashed red;
+			margin: 0px 10px 5px;
+			padding: 10px 15px 20px 25px;
+		}
+
 
 		
 	</style>
@@ -213,8 +285,11 @@
 			<a href="formularze.html">FORMULARZE</a></br>
 			<a href="multimediaa.html">MULTIMEDIA</a><br/>
 			<a href="canvas.html">CANVAS</a><br/>
+			<a href="dlugajczyk_klasa_iden.html">KLASY IDENTYFIKATORÓW</a><br/>
+			
 		<h3>CSS</h3>
-             <a href="csswlasnosci.html">WLASCIWOSCI CSS</a>
+		
+			<a href="csswlasnosci.html">WLASCIWOSCI CSS</a>
 		
 		<h3>DOKUMENT</h3>
 			<a href="doc/lista.docx" target="new">Lista grupy II w 2c</a><br/>
@@ -262,6 +337,9 @@
 		</h4>
 
 		<span><b>zadanie IIb - MODYFIKOWANIE ZADAŃ:</b></span><br/>
+		<br>
+		<hr>
+		<br>
 		<h3>
 			Formatowanie tytułu h3:<br/>
 			dekoracja tekstu – podkreślenie;<br/>
@@ -272,36 +350,55 @@
 		</h3>
 		
 		<hr/>
-
+		<br>
+		<hr>
+		<br>
 		<span>ZADANIE III – TŁO:</span><br/>
 		tło obrazkowe url(foty/tlo.jpg), nieruchome, z powtarzaniem w poziomie, z przesunięciem o 10 % w dół strony:
+		<br>
+		<hr>
+		<br>
 		<div id="obramowanie1">
 			<span>zadanie IV – OBRAMOWANIE:</span><br/>
 			<br/>
 		</div>
-		
+		<br>
+		<hr>
+		<br>
 
 			<h2 class="zadanie2">	
 			zadanie IV – OBRAMOWANIE:<br/>
 			Ustawienie obr. dla h2: styl – kreskowanie, kolor obr. – aqua, grubość - średnia, tło żółte
 			</h2>
-			
+			<br>
+			<hr>
+			<br>
 		<h1 class="zadanie3">
 			KOLOR TEKSTU: SREBRNY, CZARNE TŁO, ŻÓŁTE OBRAMOWANIE, STYL OBRAMOWANIA: RIDGE,
 			DUŻE LITERY / KAPITALIKI, TEKST USTAWIONY: DO PRAWEJ, BRAK DEKORACJI
 		</h1>
-
+		<br>
+		<hr>
+		<br>
 		<h1 id="zadanie4">
 			TEKST NAKREŚLONY, ODSTĘPY MIĘDZY ZNAKAMI W TEKŚCIE 5 PT, WYŚRODKOWANY TEST, KOLOR TEKSTU BIAŁY, TŁO FUCHSIA, OBRAMOWANIE 3PX KROPOWANE BĄDŹ INSET BIAŁE, ODSTĘP 20 PX, SZEROKOŚĆ 70%
 		</h1>
-
+		<br>
+		<hr>
+		<br>
 		<h1 id="zadanie4a">
 			TEKST NAKREŚLONY, ODSTĘPY MIĘDZY ZNAKAMI W TEKŚCIE 5 PT, WYŚRODKOWANY TEST, KOLOR TEKSTU BIAŁY, TŁO FUCHSIA, OBRAMOWANIE 3PX KROPOWANE BĄDŹ INSET BIAŁE, ODSTĘP 20 PX, SZEROKOŚĆ 70%
 		</h1>
+		<br>
+		<hr>
+		<br>
 
 		<h1 id="zadanie5">
 			ZAD DODATKOWE
 		</h1>
+		<br>
+		<hr>
+		<br>
 
 		<h2 id="ramka1">
 			zadanie IV – OBRAMOWANIE:<br/>
@@ -311,6 +408,9 @@
 			<br/><br/>
 			OBRAZ JEST ROZCIĄGNIĘTY ABY WYPEŁNIĆ CAŁY OBSZAR.
 		</h2>
+		<br>
+		<hr>
+		<br>
 
 		<h2 id="ramka2">
 			zadanie IV - OBRAMOWANIE:<br/>
@@ -320,6 +420,9 @@
 			<br/><br/>
 			OBRAZ WYPEŁNIA OBSZAR. W RAZIE POTRZEBY JEST PRZESKALOWNY, ABY WYPEŁNIĆ OBSZAR.
 		</h2>
+		<br>
+		<hr>
+		<br>
 		<table border="0">
 			<tr>
 				<td>
@@ -327,8 +430,8 @@
 						zadanie IV – OBRAMOWANIE:
 						Ustawienie obramowania obrazkowego dla nagłówka h2 - z identyfikatorem "ramka3"
 						TŁO: none; TEKST: czarny, ODSTĘP: 5px, SZEROKOŚĆ: 33%; border: 50 px solid;
-						border-image: url(foty/gwiazdka1.gif) 100 round;
-						</h2>
+						border-image: url(foty/) 100 round;
+					</h2>
 				</td>
 				<td>
 					<h2 id="ramka3a">
@@ -336,7 +439,7 @@
 						Ustawienie obramowania obrazkowego dla nagłówka h2 - z identyfikatorem "ramka3a"
 						TŁO: none; TEKST: czarny, ODSTĘP: 5px, SZEROKOŚĆ: 33%; border: 50 px solid;
 						border-image: url(foty/gwiazdka1.gif) 80 round;
-						</h2>
+					</h2>
 				</td>
 				<td>
 					<h2 id="ramka3b">
@@ -344,10 +447,80 @@
 						Ustawienie obramowania obrazkowego dla nagłówka h2 - z identyfikatorem "ramka3b"
 						TŁO: none; TEKST: czarny, ODSTĘP: 5px, SZEROKOŚĆ: 33%; border: 50 px solid;
 						border-image: url(foty/gwiazdka1.gif) 50 round;
-						</h2>
+					</h2>
 				</td>
 			</tr>
 		</table>
+		<br>
+		<hr>
+		<br>
+
+		<h2 id="kursor">zadanie V – CSS: LINKI - PSEUDOKLASY</h2>
+		<h2>
+			<a id="link1" href="https://www.onet.pl"target="new">ONET</a>
+			<a id="link1" href="https://www.wp.pl" target="new">WP</a>
+			<a id="link1" href="https://www.tsi-pai.cba.pl/"target="new">STRONA TSI - PAI</a><br/><br/>
+			<a id="link2" href="https://www.google.com"target="new">GOOGLE</a>
+			<a id="link2" href="https://www.zspm.pl" target="new">ZSPM</a>
+			<a id="link2" href="https://www.tsi-pai.cba.pl/"target="new">STRONA TSI - PAI</a>
+			
+		</h2>
+		<br>
+		<hr>
+		<br>
+		
+		<h2 id="kursor">zadanie VI – LISTY:</h2>	
+		<ul id="punkty">
+			ZALETY PRZEDMIOTU PSI:
+			<li>ucze sie rzeczy ktore mnie ciekawia</li>
+			<li>rzeczywiscie sie czegos ucze nie jak na innych lekcjach</li>
+		</ul>
+		<br>
+		<ol id="numer">
+			WADY PRZEDMIOTU PSI:
+			<li>trzeba byc na kazdej lekcji</li>
+			<li>zmeczenie po 3h pod rzad</li>
+			<li>inni nie ogarniaja - trzeba pomagac</li>
+		</ol>
+		<br>
+		<hr>
+		<br>
+		<ol id="listagif">
+			<h2 id="kursor">LISTA RZECZY W LODOWCE:</h2>
+			<li style="list-style-image: url(foty/giphy.webp);">maslo</li>
+			<li style="list-style-image: url(foty/gifek.gif);">mleko</li>
+			<li style="list-style-image: url(foty/gifekmaly.gif);">jajka</li>
+			<li>miesko</li>
+			<li>ogorek</li>
+			<li>taczka</li>
+		</ol>
+		<br>
+		<hr>
+
+		<h2 id="kursor">ZADANIE VII - KURSOR</h2>
+		<br>
+		<table border="1" style="width: 30%;" id="kursor2">
+			<tr>
+				<td>1</td>
+				<td>2</td>
+			</tr>
+		</table>
+		<br>
+		<hr>
+		<br>
+		<div id="rozmiar">
+			<h2>zadanie VIII – ROZMIAR:</h2>
+			Ustawienie wysokości (8%) i szerokości (45%) dla elementu div#rozmiar<br>
+			Kolor i rodzaj obramowania dobierz samodzielnie<br>
+			div#rozmiar { height: 8%; width: 45%; border: ...........; }<br>
+			<br>
+			<br>
+		</div>
+
+
+
+
+		<br>
 		<h1 id="logo">
 			LOGO
 		</h1>
